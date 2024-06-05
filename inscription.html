@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>B.R.REEDUC</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #AED6F1 0%, #9c9a97 100%), radial-gradient(circle at top left, #fff 20%, transparent 40%);
+            background-blend-mode: lighten;
+            background: 
+            linear-gradient(to right, #AED6F1 0%, transparent 50%),
+            linear-gradient(to left, #D3D3D3 0%, transparent 50%);
+            font-family: arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header-container img {
+            width: 100px;
+            height: 90px;
+            border-radius: 28px;
+        }
+
+        h1 {
+            letter-spacing: 1px;
+            font-size: 250%;
+            font-weight: bold;
+            color: rgb(226, 40, 40);
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 150%;
+            font-weight: bold;
+            color: rgb(3, 53, 53);
+            margin: 0;
+        }
+        .section {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            padding: 10px;
+            border-bottom: 3px solid gray;
+            border-top: 3px solid gray;
+            background: 
+                linear-gradient(45deg, #AED6F1 0%, transparent 50%),
+                linear-gradient(to left, #D3D3D3 0%, transparent 50%);
+            box-shadow: 0 0 100px rgba(255, 255, 255, 0.8);
+            margin-bottom: 0px;
+        }
+
+        .section a {
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: box-shadow 0.3s ease-in-out; /* Ajout de la transition */
+        }
+
+        .section a:hover {
+            box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.8); /* Effet de lumière au survol */
+        }
+
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            background-blend-mode: lighten;
+            background: 
+                linear-gradient(45deg, #AED6F1 0%, transparent 50%),
+                linear-gradient(to left, #D3D3D3 0%, transparent 50%);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+            margin-bottom: 40px;
+        }
+
+        form {
+            background: 
+                linear-gradient(45deg, #AED6F1 0%, transparent 50%),
+                linear-gradient(to left, #D3D3D3 0%, transparent 50%);
+            background-blend-mode: lighten;
+            padding: 3rem;
+            border-radius: 20px;
+            border-left: 1px solid rgba(255, 255, 255, .3);
+            border-top: 1px solid rgba(255, 255, 255, .3);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            -moz-backdrop-filter: blur(10px);
+            box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, .2);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: rgb(27, 26, 26);
+            font-weight: 500;
+            opacity: .7;
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+        }
+
+        input {
+            background: transparent;
+            border: none;
+            border-left: 1px solid rgba(56, 53, 53, 0.3);
+            border-top: 1px solid rgba(24, 23, 23, 0.3);
+            padding: 1rem;
+            width: 200px;
+            border-radius: 50px;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            -moz-backdrop-filter: blur(5px);
+            box-shadow: 4px 4px 60px rgba(0, 0, 0, .2);
+            color: rgba(56, 53, 53, 0.3);
+            font-weight: 500;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+            transition: all .3s;
+            margin-bottom: 2em;
+        }
+
+        input:hover,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            background: rgba(207, 7, 7, 0.1);
+            box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="button"] {
+            margin-top: 10px;
+            width: 150px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        ::placeholder {
+            color: #fff;
+        }
+
+        .drop {
+            background: 
+                linear-gradient(45deg, #AED6F1 0%, transparent 50%),
+                linear-gradient(to left, #D3D3D3 0%, transparent 50%);
+            background-blend-mode: lighten;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 10px;
+            border-left: 1px solid rgba(255, 255, 255, .3);
+            border-top: 1px solid rgba(255, 255, 255, .3);
+            box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            transition: all 0.2s ease;
+        }
+
+        .drop-1 {
+            height: 80px;
+            width: 80px;
+            top: -20px;
+            left: -40px;
+            z-index: -1;
+        }
+
+        .drop-2 {
+            height: 80px;
+            width: 80px;
+            bottom: -30px;
+            right: -10px;
+        }
+
+        .drop-3 {
+            height: 100px;
+            width: 100px;
+            bottom: 120px;
+            right: -50px;
+            z-index: -1;
+        }
+
+        .drop-4 {
+            height: 120px;
+            width: 120px;
+            top: -60px;
+            right: -60px;
+        }
+
+        .drop-5 {
+            height: 60px;
+            width: 60px;
+            bottom: 170px;
+            left: 90px;
+            z-index: -1;
+        }
+
+        input[type="button"] {
+            margin-top: 10px;
+            width: 150px;
+            font-size: 1rem;
+            cursor: pointer;
+            background-color:rgb(146, 94, 94);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        input[type="button"]:hover {
+            background-color:rgb(136, 107, 107);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header-container">
+        <div>
+            <img class="img-circle" src="logo.jpg" alt="Cabinet Logo" />
+        </div>
+        <div style="margin-left: 20px;">
+            <h1>B.R REEDUC</h1>
+            <h3><i>centre de kinésithérapie et hijama</i></h3>
+        </div>
+    </div>
+    <div class="section">
+        <i class="fas fa-home"></i>
+        <a href="ss.php">Accueil</a>
+        <a href="présentation.php">Présentation</a>
+        <a href="contact.php">Contact</a>
+        <a href="inscription.php">inscription</a>
+        
+    </div>
+    <p></br></br>Remplissez le formulaire ci-dessous pour vous inscrire et demander un rendez-vous en ligne.</BR></BR></BR></BR></BR></p>
+    <div class="form-container">
+        <form action="ix.php" method="post">
+            <p>Inscription</p>
+            <input type="text" name="fullName" placeholder="Full Name"><br>
+            <input type="tel" name="phoneNumber" placeholder="Phone Number"><br>
+            <input type="email" name="email" placeholder="Email"><br>
+            <input type="date" name="appointmentDate" placeholder="Appointment Date"><br>
+            <input type="submit" value="Submit"><br>
+        </form>
+
+        <div class="drop drop-1"></div>
+        <div class="drop drop-2"></div>
+        <div class="drop drop-3"></div>
+        <div class="drop drop-4"></div>
+        <div class="drop drop-5"></div>
+    </div>
+</body>
+
+</html>

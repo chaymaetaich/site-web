@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>B.R.REEDUC</title>
+    <style>
+       body {
+            background: linear-gradient(45deg, #AED6F1 0%, #9c9a97 100%), radial-gradient(circle at top left, #fff 20%, transparent 40%);
+            background-blend-mode: lighten;
+            background: 
+            linear-gradient(to right, #AED6F1 0%, transparent 50%),
+            linear-gradient(to left, #D3D3D3 0%, transparent 50%);
+            font-family: arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header-container img {
+            width: 100px;
+            height: 90px;
+            border-radius: 28px;
+        }
+
+        h1 {
+            letter-spacing: 1px;
+            font-size: 250%;
+            font-weight: bold;
+            color: rgb(226, 40, 40);
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 150%;
+            font-weight: bold;
+            color: rgb(3, 53, 53);
+            margin: 0;
+        }
+
+        .section {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            padding: 10px;
+            border-bottom: 3px solid gray;
+            border-top: 3px solid gray;
+            background: 
+                linear-gradient(45deg, #AED6F1 0%, transparent 50%),
+                linear-gradient(to left, #D3D3D3 0%, transparent 50%);
+            box-shadow: 0 0 100px rgba(255, 255, 255, 0.8);
+            margin-bottom: 0px;
+        }
+
+        .section a {
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: box-shadow 0.3s ease-in-out; /* Ajout de la transition */
+        }
+
+        .section a:hover {
+            box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.8); /* Effet de lumière au survol */
+        }
+
+        .container {
+      display: flex;
+      width: 90vw;
+    }
+
+    .panel {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 80vh;
+      border-radius: 50px;
+      color: #fff;
+      cursor: pointer;
+      flex: 0.5;
+      margin: 10px;
+      position: relative;
+      transition: all 700ms ease-in;
+    }
+
+    .panel h1 {
+      font-size: 20px;
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      margin: 0;
+      opacity: 0;
+      color: #D3D3D3;
+    }
+
+    .panel img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50px;
+    }
+
+    .panel.active {
+      flex: 5;
+    }
+
+    .panel.active h1 {
+      opacity: 1;
+      transition: opacity 0.3s ease-in 0.4s;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+          width: 100vw;
+          transition: opacity 0.3s ease-in 0.4s;
+      }
+
+      .panel:nth-of-type(4),
+      .panel:nth-of-type(5) {
+          display: none;
+      }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="header-container">
+        <div>
+            <img class="img-circle" src="logo.jpg" alt="Cabinet Logo" />
+        </div>
+        <div style="margin-left: 20px;">
+            <h1>B.R REEDUC</h1>
+            <h3><i>centre de kinésithérapie et hijama</i></h3>
+        </div>
+    </div>
+    <div class="section">
+        <i class="fas fa-home"></i>
+        <a href="ss.php">Accueil</a>
+        <a href="présentation.php">Présentation</a>
+        <a href="contact.php">Contact</a>
+        <a href="inscription.php">inscription</a>
+        
+    </div>
+
+    <p style="text-align:center;color: rgb(226, 40, 40) ;"><b></br>Le  Centre  de  Kinésithérapie  &&  Hijama : </b></p></br>
+
+    <p style="text-align:center;"><b>La kinésithérapie</b></br></br>une discipline médicale qui utilise des méthodes physiques, telles que des exercices, des massages et des techniques de manipulation, pour traiter diverses affections musculo-squelettiques et neurologiques.
+        Les kinésithérapeutes travaillent souvent avec des patients pour améliorer la mobilité, soulager la douleur, réhabiliter après des blessures ou des interventions chirurgicales, et améliorer la fonction physique en général.</br></br></br>
+        
+        
+        <b>La hijama</b></br></br>également connue sous le nom de <i>"cupping therapy"</i> en anglais, est une ancienne technique de médecine alternative utilisée dans la médecine traditionnelle. Elle consiste à placer des ventouses sur la peau pour créer une aspiration.
+        La hijama est souvent utilisée pour améliorer la circulation sanguine, soulager la douleur musculaire, détendre les muscles, favoriser la guérison et éliminer les toxines du corps.
+        Certains praticiens estiment que la hijama peut également avoir des effets bénéfiques sur la circulation énergétique du corps.</br></br></br>
+        En combinant ces deux services, le centre offre une approche holistique pour la santé physique, en traitant à la fois les aspects musculaires et articulaires par la kinésithérapie et en explorant des méthodes traditionnelles comme la hijama pour favoriser le bien-être global. Chaque discipline a ses propres avantages et peut être utilisée en complément de l'autre en fonction des besoins spécifiques du patient.</p></br></br>
+
+    <div class="container">
+        <div class="panel" style="background-image: url('image1.jpg');">
+          <h1>Image 1</h1>
+          <img src="1.jpg" alt="Image 1">
+        </div>
+      
+        <div class="panel" style="background-image: url('image2.jpg');">
+          <h1>Image 2</h1>
+          <img src="2.jpg" alt="Image 2">
+        </div>
+        <div class="panel" style="background-image: url('3.jpg');">
+          <h1>Image 3</h1>
+          <img src="3.jpg" alt="Image 3">
+        </div>
+        <div class="panel" style="background-image: url('image4.jpg');">
+          <h1>Image 4</h1>
+          <img src="4.jpg" alt="Image 4">
+        </div>
+        <div class="panel" style="background-image: url('image5.jpg');">
+          <h1>Image 5</h1>
+          <img src="5.jpg" alt="Image 5">
+        </div>
+    
+      <!-- Add more panels with images as needed -->
+    
+    </div>
+    
+    <script>
+      const panels = document.querySelectorAll(".panel");
+    
+      panels.forEach((panel) => {
+          panel.addEventListener("click", () => {
+              removeActiveClasses();
+              panel.classList.add("active");
+          });
+      });
+    
+      function removeActiveClasses() {
+          panels.forEach((panel) => {
+              panel.classList.remove("active");
+          })
+      }
+    </script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

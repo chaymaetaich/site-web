@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.R.REEDUC</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family-Poppins:wght@200;300;400;500;600;700;800;900 &display=swap');
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family :'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.contact{
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  background: linear-gradient(45deg, #AED6F1 0%, #9c9a97 100%), radial-gradient(circle at top left, #fff 20%, transparent 40%);
+  background-blend-mode: lighten;
+  background: 
+  linear-gradient(to right, #AED6F1 0%, transparent 50%),
+  linear-gradient(to left, #D3D3D3 0%, transparent 50%);
+  
+  background-size: contain;
+}
+.contact .content
+{
+max-width: 800px;
+text-align: center;
+}
+.contact .content h2{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: #554d4d;
+}
+.contact .content p{
+    font-weight: 300;
+    color: black;
+    text-align: justify;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display:flex;
+}
+.container .contactInfo .box .icon {
+    width: 60px; /* Ajustez la largeur selon vos préférences */
+    height: 60px; /* Ajustez la hauteur selon vos préférences */
+    background: #fff; /* Couleur de fond */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* Ajustez la bordure selon vos préférences */
+    font-size: 30px;
+    text-align: center;
+}
+
+.container .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: black;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3{
+font-weight: 500;
+color: #fff;
+
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h2{
+   font-size: 30px;
+   color: #333;
+   font-weight: 500; 
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+}
+@media(max-width:991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction:column;
+
+    }
+}
+        body {
+            background: linear-gradient(45deg, #AED6F1 0%, #9c9a97 100%), radial-gradient(circle at top left, #fff 20%, transparent 40%);
+            background-blend-mode: lighten;
+            background: 
+            linear-gradient(to right, #AED6F1 0%, transparent 50%),
+            linear-gradient(to left, #D3D3D3 0%, transparent 50%);
+            font-family: arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header-container img {
+            width: 100px;
+            height: 90px;
+            border-radius: 28px;
+        }
+
+        h1 {
+            letter-spacing: 1px;
+            font-size: 250%;
+            font-weight: bold;
+            color: rgb(226, 40, 40);
+            margin: 0;
+        }
+
+         h3 {
+            font-size: 150%;
+            font-weight: bold;
+            color: rgb(3, 53, 53);
+            margin: 0;
+        }
+
+        .section {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            padding: 10px;
+            border-bottom: 3px solid gray;
+            border-top: 3px solid gray;
+            background: 
+                linear-gradient(45deg, #AED6F1 0%, transparent 50%),
+                linear-gradient(to left, #D3D3D3 0%, transparent 50%);
+            box-shadow: 0 0 100px rgba(255, 255, 255, 0.8);
+            margin-bottom: 0px;
+        }
+
+        .section a {
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: box-shadow 0.3s ease-in-out; /* Ajout de la transition */
+        }
+
+        .section a:hover {
+            box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.8); /* Effet de lumière au survol */
+        }
+  
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <div>
+            <img class="img-circle" src="logo.jpg" alt="Cabinet Logo" />
+        </div>
+        <div style="margin-left: 20px;">
+            <h1>B.R REEDUC</h1>
+            <h3><i>centre de kinésithérapie et hijama</i></h3>
+        </div>
+    </div>
+    <div class="section">
+        <i class="fas fa-home"></i>
+        <a href="ss.php">Accueil</a>
+        <a href="présentation.php">Présentation</a>
+        <a href="contact.php">Contact</a>
+        <a href="inscription.php">inscription</a>
+        
+        
+    </div>
+
+    <section class="contact">
+        <div class="content">
+            <h2 ><b>Contactez-nous</b></h2></br></br>
+            <p><i>"Bienvenue à la page de contact de B.R REEDUC, votre destination privilégiée pour toute demande d'information ou prise de rendez-vous. Notre équipe est prête à vous écouter et à répondre à toutes vos interrogations concernant nos services de kinésithérapie et hijama. N'hésitez pas à nous contacter pour commencer votre parcours vers le bien-être et la santé."</i></p>
+            </div>
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3 style="color: rgb(226, 40, 40);"><b>Phone1</b></h3>
+                            <p>06 57 82 97 97</p></div></div>
+                  
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                               <h3 style="color: rgb(226, 40, 40);"><b>Phone2</b></h3>
+                                <p>07 01 22 16 26</p></div></div>
+                            
+                    <div class="box">
+                                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                                        <div class="text">
+                                            <h3 style="color: rgb(226, 40, 40);"><b>Fix</b></h3>
+                                            <p>05 38 31 45 95</p></div></div>
+
+                                            <div class="box">
+                                                <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                                                <div class="text">
+                                                    <h3 style="color: rgb(226, 40, 40);"><b>Email</b></h3>
+                                                    <p><a href="mailto:b.r.reeduc@gmail.com">b.r.reeduc@gmail.com</a></p>
+                                                </div>
+                                            </div>
+                            
+                                            <div class="box">
+                                                <div class="icon"><i class="fab fa-facebook" aria-hidden="true"></i></div>
+                                                <div class="text">
+                                                    <h3 style="color: rgb(226, 40, 40);"><b>Facebook</b></h3>
+                                                    <p><a href="https://www.facebook.com/br.reeduc" target="_blank">@br.reeduc</a></p>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="box">
+                                                <div class="icon"><i class="fab fa-instagram" aria-hidden="true"></i></div>
+                                                <div class="text">
+                                                    <h3 style="color: rgb(226, 40, 40);"><b>Instagram</b></h3>
+                                                    <p><a href="https://www.instagram.com/brreeduc2023" target="_blank">brreeduc2023</a></p>
+                                                </div>
+                                            </div>
+
+                    <div class="box">
+                                                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                                                    <div class="text">
+                                                        <h3 style="color: rgb(226, 40, 40);"><b>Address</b></h3>
+                                                        <p>MAG RDC N 179 ZOUHOUR 1 AV EL KARAMA EN FACE DE YATOUT FES</p>   
+                                                    
+                                                    </div></div>
+                            
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contactForm">
+                <form method="post" action="insertmessage.php">
+                        <h2> Envoyer un message</h2>
+                        <div class="inputBox">
+                            <input type="text" name="nom" required="required">
+                            <span>Nom & Prénom</span>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="text" name="email" required="required">
+                            <span>Email</span>
+                        </div>
+
+                        <div class="inputBox">
+                            <textarea name="texte" required="required"></textarea>
+                            <span>Taper vos message...</span>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="submit" name="submit" value="Envoyer">
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+
+
+
+    </body>
+    </html>
